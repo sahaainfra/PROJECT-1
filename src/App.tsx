@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   LayoutDashboard, Database, Shield, FileText, TestTube, 
   Flag, BookOpen, Settings, Bell, Search as SearchIcon, Menu, X,
-  ChevronRight, Activity, CheckCircle2, Eye, Building2
+  ChevronRight, Activity, CheckCircle2, Eye, Building2, Users
 } from 'lucide-react';
 import { Launchpad } from './components/Launchpad';
 import { BaselineOverview } from './components/BaselineOverview';
@@ -21,9 +21,10 @@ import { WorkflowDashboard } from './components/WorkflowDashboard';
 import { ProtocolDashboard } from './components/ProtocolDashboard';
 import { AuditSecurityDashboard } from './components/AuditSecurityDashboard';
 import { SecurityFoundationDashboard } from './components/SecurityFoundationDashboard';
+import { AccountabilityDashboard } from './components/AccountabilityDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -36,6 +37,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'protocol-engine', label: 'Protocol Engine', icon: <Shield size={20} />, highlight: true },
   { id: 'audit-sec', label: 'Audit & Security', icon: <FileText size={20} />, highlight: true },
   { id: 'security', label: 'Security Foundation', icon: <Shield size={20} />, highlight: true },
+  { id: 'acc', label: 'Accountability', icon: <Users size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -72,6 +74,7 @@ export default function App() {
       case 'protocol-engine': return <ProtocolDashboard />;
       case 'audit-sec': return <AuditSecurityDashboard />;
       case 'security': return <SecurityFoundationDashboard />;
+      case 'acc': return <AccountabilityDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -237,11 +240,11 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 9 of 126</span>
-                      <span>7.9%</span>
+                      <span>Part 10 of 126</span>
+                      <span>8.7%</span>
                     </div>
                     <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '7.9%' }}></div>
+                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '8.7%' }}></div>
                     </div>
                   </div>
                 </div>
