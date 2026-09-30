@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { modules, baselineMetrics, regressionResults } from '../data/mockData';
 import { 
   Database, Shield, Flag, TestTube, BookOpen, CheckCircle2,
-  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2
+  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -234,6 +234,40 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">🏢</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+        className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 5 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.iam</span>
+            </div>
+            <h2 className="text-xl font-bold">User, Role & Permission Architecture</h2>
+            <p className="text-sm text-indigo-100 mt-1 max-w-lg">
+              Enterprise RBAC with scoped grants, field-level masking, and SoD rules. 
+              13 system roles, 15 permissions, shadow mode active.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('iam')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-indigo-700 rounded-lg text-sm font-semibold hover:bg-indigo-50 transition-colors shadow-sm"
+              >
+                <Key size={16} />
+                View Permissions
+              </button>
+              <span className="text-[10px] text-indigo-200">13 roles · 15 permissions · 4 SoD rules</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">🔐</div>
           </div>
         </div>
       </motion.div>
