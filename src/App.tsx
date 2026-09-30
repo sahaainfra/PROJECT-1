@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   LayoutDashboard, Database, Shield, FileText, TestTube, 
-  Flag, BookOpen, Settings, Bell, Search, Menu, X,
+  Flag, BookOpen, Settings, Bell, Search as SearchIcon, Menu, X,
   ChevronRight, Activity, CheckCircle2, Eye
 } from 'lucide-react';
 import { Launchpad } from './components/Launchpad';
@@ -13,13 +13,15 @@ import { RegressionTests } from './components/RegressionTests';
 import { Documentation } from './components/Documentation';
 import { AcceptancePanel } from './components/AcceptancePanel';
 import { PreviewShell } from './components/PreviewShell';
+import { AuditDashboard } from './components/AuditDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
   { id: 'preview', label: 'Live Preview', icon: <Eye size={20} />, highlight: true },
+  { id: 'audit', label: 'System Audit', icon: <SearchIcon size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -48,6 +50,7 @@ export default function App() {
       case 'regression': return <RegressionTests />;
       case 'docs': return <Documentation />;
       case 'acceptance': return <AcceptancePanel />;
+      case 'audit': return <AuditDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -78,7 +81,7 @@ export default function App() {
           {/* Center - Search */}
           <div className="hidden md:flex items-center flex-1 max-w-md mx-8">
             <div className="relative w-full">
-              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+              <SearchIcon size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
               <input 
                 type="text" 
                 placeholder="Search modules, controls, documentation..."
@@ -213,11 +216,11 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 1 of 126</span>
-                      <span>1.6%</span>
+                      <span>Part 2 of 126</span>
+                      <span>2.4%</span>
                     </div>
                     <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '1.6%' }}></div>
+                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '2.4%' }}></div>
                     </div>
                   </div>
                 </div>

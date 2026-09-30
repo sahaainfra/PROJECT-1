@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { modules, baselineMetrics, regressionResults } from '../data/mockData';
 import { 
   Database, Shield, Flag, TestTube, BookOpen, CheckCircle2,
-  TrendingUp, Clock, AlertCircle, ArrowRight, Eye
+  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -100,7 +100,8 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
         </div>
       </div>
 
-      {/* Live Preview CTA */}
+      {/* Live Preview + System Audit CTAs */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -134,6 +135,41 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
         </div>
       </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+        className="bg-gradient-to-r from-violet-600 via-purple-600 to-violet-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 2 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.audit</span>
+            </div>
+            <h2 className="text-xl font-bold">System Audit & Discovery</h2>
+            <p className="text-sm text-violet-100 mt-1 max-w-lg">
+              Complete technical inventory of the existing ERP. Module coverage, database entity map, API inventory, 
+              dependency graph, gap matrix for Parts 3–126, risk register, and control inventory.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('audit')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-violet-700 rounded-lg text-sm font-semibold hover:bg-violet-50 transition-colors shadow-sm"
+              >
+                <Search size={16} />
+                View Audit
+              </button>
+              <span className="text-[10px] text-violet-200">16 modules · 25 entities · 12 risks</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">🔍</div>
+          </div>
+        </div>
+      </motion.div>
+      </div>
 
       {/* Bottom Row: Activity + Navigation Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
