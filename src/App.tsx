@@ -17,9 +17,10 @@ import { AuditDashboard } from './components/AuditDashboard';
 import { CoreServicesDashboard } from './components/CoreServicesDashboard';
 import { OrganizationDashboard } from './components/OrganizationDashboard';
 import { IAMDashboard } from './components/IAMDashboard';
+import { WorkflowDashboard } from './components/WorkflowDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -28,6 +29,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'core', label: 'Core Services', icon: <Activity size={20} />, highlight: true },
   { id: 'org', label: 'Organization', icon: <Building2 size={20} />, highlight: true },
   { id: 'iam', label: 'Permissions', icon: <Shield size={20} />, highlight: true },
+  { id: 'wf', label: 'Workflow', icon: <Activity size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -60,6 +62,7 @@ export default function App() {
       case 'core': return <CoreServicesDashboard />;
       case 'org': return <OrganizationDashboard />;
       case 'iam': return <IAMDashboard />;
+      case 'wf': return <WorkflowDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -225,11 +228,11 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 5 of 126</span>
-                      <span>4.8%</span>
+                      <span>Part 6 of 126</span>
+                      <span>5.5%</span>
                     </div>
                     <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '4.8%' }}></div>
+                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '5.5%' }}></div>
                     </div>
                   </div>
                 </div>
