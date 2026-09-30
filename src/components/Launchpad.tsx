@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { modules, baselineMetrics, regressionResults } from '../data/mockData';
 import { 
   Database, Shield, Flag, TestTube, BookOpen, CheckCircle2,
-  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key
+  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -336,6 +336,40 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">🛡️</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.7 }}
+        className="bg-gradient-to-r from-slate-600 via-slate-700 to-slate-800 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 8 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.audit_sec</span>
+            </div>
+            <h2 className="text-xl font-bold">Audit, Security & Governance</h2>
+            <p className="text-sm text-slate-200 mt-1 max-w-lg">
+              Tamper-evident audit engine with hash chain verification, session management, 
+              security event detection, and comprehensive audit trails.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('audit-sec')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-slate-700 rounded-lg text-sm font-semibold hover:bg-slate-100 transition-colors shadow-sm"
+              >
+                <FileText size={16} />
+                View Audit & Security
+              </button>
+              <span className="text-[10px] text-slate-300">45,678 audit records · 4 active sessions · 5 security events</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">🔒</div>
           </div>
         </div>
       </motion.div>
