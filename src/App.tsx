@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   LayoutDashboard, Database, Shield, FileText, TestTube, 
   Flag, BookOpen, Settings, Bell, Search as SearchIcon, Menu, X,
-  ChevronRight, Activity, CheckCircle2, Eye
+  ChevronRight, Activity, CheckCircle2, Eye, Building2
 } from 'lucide-react';
 import { Launchpad } from './components/Launchpad';
 import { BaselineOverview } from './components/BaselineOverview';
@@ -15,15 +15,17 @@ import { AcceptancePanel } from './components/AcceptancePanel';
 import { PreviewShell } from './components/PreviewShell';
 import { AuditDashboard } from './components/AuditDashboard';
 import { CoreServicesDashboard } from './components/CoreServicesDashboard';
+import { OrganizationDashboard } from './components/OrganizationDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
   { id: 'preview', label: 'Live Preview', icon: <Eye size={20} />, highlight: true },
   { id: 'audit', label: 'System Audit', icon: <SearchIcon size={20} />, highlight: true },
   { id: 'core', label: 'Core Services', icon: <Activity size={20} />, highlight: true },
+  { id: 'org', label: 'Organization', icon: <Building2 size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -54,6 +56,7 @@ export default function App() {
       case 'acceptance': return <AcceptancePanel />;
       case 'audit': return <AuditDashboard />;
       case 'core': return <CoreServicesDashboard />;
+      case 'org': return <OrganizationDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
