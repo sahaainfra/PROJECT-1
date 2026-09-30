@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   LayoutDashboard, Database, Shield, FileText, TestTube, 
   Flag, BookOpen, Settings, Bell, Search, Menu, X,
-  ChevronRight, Activity, CheckCircle2, AlertTriangle, Clock
+  ChevronRight, Activity, CheckCircle2, Eye
 } from 'lucide-react';
 import { Launchpad } from './components/Launchpad';
 import { BaselineOverview } from './components/BaselineOverview';
@@ -12,12 +12,14 @@ import { ProtocolControls } from './components/ProtocolControls';
 import { RegressionTests } from './components/RegressionTests';
 import { Documentation } from './components/Documentation';
 import { AcceptancePanel } from './components/AcceptancePanel';
+import { PreviewShell } from './components/PreviewShell';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview';
 
-const navItems: { id: View; label: string; icon: React.ReactNode }[] = [
+const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
+  { id: 'preview', label: 'Live Preview', icon: <Eye size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -31,6 +33,11 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [contextCompany, setContextCompany] = useState('Acme Construction Ltd.');
   const [contextProject, setContextProject] = useState('All Projects');
+
+  // If in preview mode, render the full preview shell
+  if (currentView === 'preview') {
+    return <PreviewShell onBack={() => setCurrentView('launchpad')} />;
+  }
 
   const renderView = () => {
     switch (currentView) {
@@ -63,7 +70,7 @@ export default function App() {
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-sm font-semibold leading-tight">Construction ERP</h1>
-                <p className="text-[10px] text-slate-400 leading-tight">Program Baseline Dashboard</p>
+                <p className="text-[10px] text-slate-400 leading-tight">Program Dashboard — Parts 0–126</p>
               </div>
             </div>
           </div>
@@ -128,7 +135,7 @@ export default function App() {
           <span className="whitespace-nowrap">Commit: {systemInfo.gitCommit}</span>
           <span className="whitespace-nowrap flex items-center gap-1">
             <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
-            ff.pgm: ON
+            ff.pgm: ON · ff.preview: ON
           </span>
           <span className="whitespace-nowrap">Integrity: 100%</span>
           <span className="whitespace-nowrap">Last check: {new Date(systemInfo.lastCheck).toLocaleString()}</span>
@@ -160,18 +167,24 @@ export default function App() {
                     className={`
                       w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all
                       ${currentView === item.id 
-                        ? 'bg-blue-50 text-blue-700 shadow-sm' 
+                        ? item.highlight ? 'bg-amber-50 text-amber-700 shadow-sm ring-1 ring-amber-200' : 'bg-blue-50 text-blue-700 shadow-sm'
                         : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'}
+                      ${item.highlight && currentView !== item.id ? 'border border-amber-200 bg-amber-50/50' : ''}
                     `}
                   >
-                    <span className={currentView === item.id ? 'text-blue-600' : 'text-slate-400'}>
+                    <span className={currentView === item.id 
+                      ? item.highlight ? 'text-amber-600' : 'text-blue-600'
+                      : item.highlight ? 'text-amber-500' : 'text-slate-400'}>
                       {item.icon}
                     </span>
                     {item.label}
+                    {item.highlight && currentView !== item.id && (
+                      <span className="ml-auto text-[9px] bg-amber-500 text-white px-1.5 py-0.5 rounded-full font-bold">NEW</span>
+                    )}
                     {currentView === item.id && (
                       <motion.div 
                         layoutId="activeIndicator"
-                        className="ml-auto w-1.5 h-1.5 bg-blue-500 rounded-full" 
+                        className="ml-auto w-1.5 h-1.5 bg-current rounded-full" 
                       />
                     )}
                   </button>
@@ -196,16 +209,15 @@ export default function App() {
               <div className="p-3 mt-auto border-t border-slate-100">
                 <div className="bg-slate-50 rounded-lg p-3">
                   <div className="flex items-center gap-2 text-xs">
-                    <Clock size={12} className="text-slate-400" />
                     <span className="text-slate-500">Phase: FOUNDATION</span>
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 0 of 126</span>
-                      <span>0.8%</span>
+                      <span>Part 1 of 126</span>
+                      <span>1.6%</span>
                     </div>
                     <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '0.8%' }}></div>
+                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '1.6%' }}></div>
                     </div>
                   </div>
                 </div>
