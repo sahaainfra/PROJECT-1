@@ -5,7 +5,7 @@ import {
   TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -438,6 +438,40 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">👥</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.0 }}
+        className="bg-gradient-to-r from-cyan-600 via-teal-600 to-cyan-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 11 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.mdm</span>
+            </div>
+            <h2 className="text-xl font-bold">Master Data Governance</h2>
+            <p className="text-sm text-cyan-100 mt-1 max-w-lg">
+              Centralized master data management with maker-checker workflows, duplicate prevention, 
+              and comprehensive data quality tracking for materials, vendors, and more.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('mdm')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-cyan-700 rounded-lg text-sm font-semibold hover:bg-cyan-50 transition-colors shadow-sm"
+              >
+                <Database size={16} />
+                View Master Data
+              </button>
+              <span className="text-[10px] text-cyan-200">5 materials · 4 vendors · 4 change requests · 4 DQ issues</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">📦</div>
           </div>
         </div>
       </motion.div>

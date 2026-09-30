@@ -22,9 +22,10 @@ import { ProtocolDashboard } from './components/ProtocolDashboard';
 import { AuditSecurityDashboard } from './components/AuditSecurityDashboard';
 import { SecurityFoundationDashboard } from './components/SecurityFoundationDashboard';
 import { AccountabilityDashboard } from './components/AccountabilityDashboard';
+import { MasterDataGovernanceDashboard } from './components/MasterDataGovernanceDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -38,6 +39,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'audit-sec', label: 'Audit & Security', icon: <FileText size={20} />, highlight: true },
   { id: 'security', label: 'Security Foundation', icon: <Shield size={20} />, highlight: true },
   { id: 'acc', label: 'Accountability', icon: <Users size={20} />, highlight: true },
+  { id: 'mdm', label: 'Master Data', icon: <Database size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -75,6 +77,7 @@ export default function App() {
       case 'audit-sec': return <AuditSecurityDashboard />;
       case 'security': return <SecurityFoundationDashboard />;
       case 'acc': return <AccountabilityDashboard />;
+      case 'mdm': return <MasterDataGovernanceDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -240,7 +243,7 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 10 of 126</span>
+                      <span>Part 11 of 126</span>
                       <span>8.7%</span>
                     </div>
                     <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
