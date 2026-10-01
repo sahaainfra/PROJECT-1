@@ -5,7 +5,7 @@ import {
   TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard, Smartphone, Edit
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -642,6 +642,40 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">📝</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.6 }}
+        className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 17 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.search</span>
+            </div>
+            <h2 className="text-xl font-bold">Global Search & Command Center</h2>
+            <p className="text-sm text-indigo-100 mt-1 max-w-lg">
+              Permission-safe universal search with command palette (⌘K), recent records, favourites, 
+              and context-aware actions across all modules.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('search')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-indigo-700 rounded-lg text-sm font-semibold hover:bg-indigo-50 transition-colors shadow-sm"
+              >
+                <Search size={16} />
+                Open Search
+              </button>
+              <span className="text-[10px] text-indigo-200">10 documents · 8 actions · 4 synonyms · CP-SRCH-01</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">🔍</div>
           </div>
         </div>
       </motion.div>
