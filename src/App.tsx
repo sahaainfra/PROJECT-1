@@ -24,9 +24,10 @@ import { SecurityFoundationDashboard } from './components/SecurityFoundationDash
 import { AccountabilityDashboard } from './components/AccountabilityDashboard';
 import { MasterDataGovernanceDashboard } from './components/MasterDataGovernanceDashboard';
 import { ExcelDataExchangeDashboard } from './components/ExcelDataExchangeDashboard';
+import { DesignSystemGuide } from './design-system/StyleGuide';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -42,6 +43,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'acc', label: 'Accountability', icon: <Users size={20} />, highlight: true },
   { id: 'mdm', label: 'Master Data', icon: <Database size={20} />, highlight: true },
   { id: 'xls', label: 'Excel Exchange', icon: <FileText size={20} />, highlight: true },
+  { id: 'design-system', label: 'Design System', icon: <Settings size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -81,6 +83,7 @@ export default function App() {
       case 'acc': return <AccountabilityDashboard />;
       case 'mdm': return <MasterDataGovernanceDashboard />;
       case 'xls': return <ExcelDataExchangeDashboard />;
+      case 'design-system': return <DesignSystemGuide />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -246,11 +249,11 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 12 of 126</span>
-                      <span>9.5%</span>
+                      <span>Part 13 of 126</span>
+                      <span>10.3%</span>
                     </div>
                     <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '9.5%' }}></div>
+                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '10.3%' }}></div>
                     </div>
                   </div>
                 </div>
