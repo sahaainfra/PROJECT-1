@@ -36,9 +36,10 @@ import { CRMManagement } from './components/CRMManagement';
 import { TenderManagement } from './components/TenderManagement';
 import { EstimationDashboard } from './components/EstimationDashboard';
 import { QSDashboard } from './components/QSDashboard';
+import { BudgetDashboard } from './components/BudgetDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -66,6 +67,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'tender', label: 'Tender Mgmt', icon: <FileText size={20} />, highlight: true },
   { id: 'estimation', label: 'Estimation', icon: <FileText size={20} />, highlight: true },
   { id: 'qs', label: 'Quantity Surveying', icon: <FileText size={20} />, highlight: true },
+  { id: 'budget', label: 'Budgeting & Cost', icon: <FileText size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -117,6 +119,7 @@ export default function App() {
       case 'tender': return <TenderManagement />;
       case 'estimation': return <EstimationDashboard />;
       case 'qs': return <QSDashboard />;
+      case 'budget': return <BudgetDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -282,11 +285,11 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 24 of 126</span>
-                      <span>19.0%</span>
+                      <span>Part 25 of 126</span>
+                      <span>19.8%</span>
                     </div>
                       <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                        <div className="h-full bg-blue-500 rounded-full" style={{ width: '19.0%' }}></div>
+                        <div className="h-full bg-blue-500 rounded-full" style={{ width: '19.8%' }}></div>
                       </div>                  </div>
                 </div>
               </div>

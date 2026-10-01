@@ -5,7 +5,7 @@ import {
   TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard, Smartphone, Edit, Bell
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -914,6 +914,40 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">📐</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2.4 }}
+        className="bg-gradient-to-r from-emerald-600 via-green-600 to-emerald-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 25 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.bud</span>
+            </div>
+            <h2 className="text-xl font-bold">Advanced Budgeting & Cost Control</h2>
+            <p className="text-sm text-emerald-100 mt-1 max-w-lg">
+              Comprehensive budget management with cost codes, version control, commitments tracking, 
+              actual cost monitoring, variance analysis, and budget availability checks.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('budget')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-emerald-700 rounded-lg text-sm font-semibold hover:bg-emerald-50 transition-colors shadow-sm"
+              >
+                <FileText size={16} />
+                View Budget
+              </button>
+              <span className="text-[10px] text-emerald-200">4 versions · 8 budget lines · 4 commitments · 5 protocol controls</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">💰</div>
           </div>
         </div>
       </motion.div>
