@@ -5,7 +5,7 @@ import {
   TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard, Smartphone, Edit, Bell
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -982,6 +982,40 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">📅</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2.6 }}
+        className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 27 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.prog</span>
+            </div>
+            <h2 className="text-xl font-bold">Advanced Progress Management</h2>
+            <p className="text-sm text-orange-100 mt-1 max-w-lg">
+              Progress tracking with earned value management (EVM), S-curves, productivity analysis, 
+              and period close workflows for comprehensive project monitoring.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('progress')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-orange-700 rounded-lg text-sm font-semibold hover:bg-orange-50 transition-colors shadow-sm"
+              >
+                <FileText size={16} />
+                View Progress
+              </button>
+              <span className="text-[10px] text-orange-200">6 entries · 5 periods · 3 protocol controls</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">📊</div>
           </div>
         </div>
       </motion.div>
