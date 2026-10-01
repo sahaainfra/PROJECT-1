@@ -30,9 +30,10 @@ import { ResponsiveShell } from './components/ResponsiveShell';
 import { DataEntryFramework } from './components/DataEntryFramework';
 import { SearchCommandCenter } from './components/SearchCommandCenter';
 import { NotificationEngine } from './components/NotificationEngine';
+import { ProjectManagement } from './components/ProjectManagement';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -54,6 +55,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'data-entry', label: 'Data Entry', icon: <Edit size={20} />, highlight: true },
   { id: 'search', label: 'Search', icon: <SearchIcon size={20} />, highlight: true },
   { id: 'notifications', label: 'Notifications', icon: <Bell size={20} />, highlight: true },
+  { id: 'project', label: 'Project 360', icon: <Building2 size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -99,6 +101,7 @@ export default function App() {
       case 'data-entry': return <DataEntryFramework />;
       case 'search': return <SearchCommandCenter />;
       case 'notifications': return <NotificationEngine />;
+      case 'project': return <ProjectManagement />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -264,11 +267,11 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 18 of 126</span>
-                      <span>14.3%</span>
+                      <span>Part 19 of 126</span>
+                      <span>15.0%</span>
                     </div>
                       <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                        <div className="h-full bg-blue-500 rounded-full" style={{ width: '14.3%' }}></div>
+                        <div className="h-full bg-blue-500 rounded-full" style={{ width: '15.0%' }}></div>
                       </div>                  </div>
                 </div>
               </div>
