@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { modules, baselineMetrics, regressionResults } from '../data/mockData';
 import { 
   Database, Shield, Flag, TestTube, BookOpen, CheckCircle2,
-  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard
+  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard, Smartphone
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -574,6 +574,40 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">📊</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.4 }}
+        className="bg-gradient-to-r from-pink-600 via-rose-600 to-pink-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 15 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.rsp</span>
+            </div>
+            <h2 className="text-xl font-bold">Responsive Shell</h2>
+            <p className="text-sm text-pink-100 mt-1 max-w-lg">
+              Mobile + Tablet + Desktop experience with PWA support, device capabilities (camera, GPS, QR), 
+              and role-based navigation. Installable app with offline-ready foundation.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button 
+                onClick={() => onNavigate('responsive')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-pink-700 rounded-lg text-sm font-semibold hover:bg-pink-50 transition-colors shadow-sm"
+              >
+                <Smartphone size={16} />
+                View Responsive Shell
+              </button>
+              <span className="text-[10px] text-pink-200">3 shells · 6 capabilities · PWA ready · CP-RSP-01</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">📱</div>
           </div>
         </div>
       </motion.div>
