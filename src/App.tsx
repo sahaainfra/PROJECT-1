@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   LayoutDashboard, Database, Shield, FileText, TestTube, 
   Flag, BookOpen, Settings, Bell, Search as SearchIcon, Menu, X,
-  ChevronRight, Activity, CheckCircle2, Eye, Building2, Users, Smartphone
+  ChevronRight, Activity, CheckCircle2, Eye, Building2, Users, Smartphone, Edit
 } from 'lucide-react';
 import { Launchpad } from './components/Launchpad';
 import { BaselineOverview } from './components/BaselineOverview';
@@ -27,9 +27,10 @@ import { ExcelDataExchangeDashboard } from './components/ExcelDataExchangeDashbo
 import { DesignSystemGuide } from './design-system/StyleGuide';
 import { DashboardFramework } from './components/DashboardFramework';
 import { ResponsiveShell } from './components/ResponsiveShell';
+import { DataEntryFramework } from './components/DataEntryFramework';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -48,6 +49,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'design-system', label: 'Design System', icon: <Settings size={20} />, highlight: true },
   { id: 'dashboard', label: 'Dashboards', icon: <LayoutDashboard size={20} />, highlight: true },
   { id: 'responsive', label: 'Responsive', icon: <Smartphone size={20} />, highlight: true },
+  { id: 'data-entry', label: 'Data Entry', icon: <Edit size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -90,6 +92,7 @@ export default function App() {
       case 'design-system': return <DesignSystemGuide />;
       case 'dashboard': return <DashboardFramework />;
       case 'responsive': return <ResponsiveShell />;
+      case 'data-entry': return <DataEntryFramework />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };
@@ -255,11 +258,11 @@ export default function App() {
                   </div>
                   <div className="mt-2">
                     <div className="flex justify-between text-[10px] text-slate-400 mb-1">
-                      <span>Part 15 of 126</span>
-                      <span>11.9%</span>
+                      <span>Part 16 of 126</span>
+                      <span>12.7%</span>
                     </div>
                     <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '11.9%' }}></div>
+                      <div className="h-full bg-blue-500 rounded-full" style={{ width: '12.7%' }}></div>
                     </div>
                   </div>
                 </div>
