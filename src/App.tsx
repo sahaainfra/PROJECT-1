@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   LayoutDashboard, Database, Shield, FileText, TestTube, 
   Flag, BookOpen, Settings, Bell, Search as SearchIcon, Menu, X,
-  ChevronRight, Activity, CheckCircle2, Eye, Building2, Users, Smartphone, Edit
+  ChevronRight, Activity, CheckCircle2, Eye, Building2, Users, Smartphone, Edit, Package
 } from 'lucide-react';
 import { Launchpad } from './components/Launchpad';
 import { BaselineOverview } from './components/BaselineOverview';
@@ -148,7 +148,7 @@ export default function App() {
       case 'wx': return <WeatherDashboard />;
       case 'gis': return <GISDashboard />;
       case 'proc': return <ProcurementDashboard />;
-      case 'stores': return <StoreDashboard />;
+      case 'stores': return <StoreDashboard persona="system-admin" />;
       case 'pce': return <PCEDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }

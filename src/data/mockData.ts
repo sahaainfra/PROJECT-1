@@ -93,6 +93,14 @@ export const featureFlags = [
   { key: 'ff.stores.plant_store', description: 'Plant store with batch-driven issues', scope: 'project', enabled: false, rolloutPercent: 0, owner: 'Part 35' },
   { key: 'ff.pce', description: 'Planned vs Budgeted vs Actual Engine / Project Control Engine (Part 33)', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 33' },
   { key: 'ff.pce.provisional', description: 'PROVISIONAL view of draft data in PCE (Part 33, optional flag)', scope: 'project', enabled: false, rolloutPercent: 0, owner: 'Part 33' },
+  { key: 'ff.tools', description: 'Tool & Small-Asset Tracking module (Part 36)', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
+  { key: 'ff.tools.register', description: 'Tool registration from GRN, bulk import and tag printing', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
+  { key: 'ff.tools.custody', description: 'Issue/return/transfer custody ledger with acknowledgement', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
+  { key: 'ff.tools.scan', description: 'QR/barcode scan operations on mobile', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
+  { key: 'ff.tools.rfid', description: 'RFID gate reader integration', scope: 'project', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
+  { key: 'ff.tools.loss_recovery', description: 'Damage/loss reporting, investigation and recovery postings', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
+  { key: 'ff.tools.dispose', description: 'Disposal with approval', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
+  { key: 'ff.tools.utilisation', description: 'Idle tools and tools-per-site utilisation analytics', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 36' },
 ];
 
 export const protocolControls = [

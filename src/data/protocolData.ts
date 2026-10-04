@@ -562,6 +562,54 @@ export const controlPoints: ControlPoint[] = [
     description: 'Invoice posting requires valid certification',
     version: 1,
     isActive: true
+  },
+
+  // Part 36 - Tool & Small-Asset Tracking
+  {
+    id: 'cp_023',
+    cpCode: 'CP-TOL-01',
+    module: 'tools',
+    stage: 'EXECUTE',
+    trigger: 'tools.custody.issue',
+    checkType: 'CUSTODIAN_AND_ACK',
+    enforcement: 'BLOCK',
+    configJson: { requireNamedCustodian: true, requireAcknowledgement: true, ackMethods: ['otp', 'signature'] },
+    evidenceRuleCode: 'EVD-TOL-ISSUE',
+    escalationLadderCode: 'ESC-L2-STORE',
+    ownerRole: 'store_incharge',
+    description: 'Issue only to a named custodian with acknowledgement (OTP/signature)',
+    version: 1,
+    isActive: true
+  },
+  {
+    id: 'cp_024',
+    cpCode: 'CP-TOL-02',
+    module: 'tools',
+    stage: 'MONITOR',
+    trigger: 'tools.return.overdue',
+    checkType: 'TIME_WINDOW',
+    enforcement: 'MONITOR',
+    configJson: { overdueCheck: true, custodyVerificationCheck: true, dr21: true },
+    escalationLadderCode: 'ESC-L2-STORE',
+    ownerRole: 'store_incharge',
+    description: 'Overdue returns and custody verification gaps monitored (DR-21); escalated L1→L2',
+    version: 1,
+    isActive: true
+  },
+  {
+    id: 'cp_025',
+    cpCode: 'CP-TOL-03',
+    module: 'tools',
+    stage: 'CLOSE',
+    trigger: 'tools.loss.close',
+    checkType: 'RECOVERY_OR_WRITE_OFF',
+    enforcement: 'BLOCK',
+    configJson: { requireRecovery: true, allowWriteOff: true, recoveryBasis: 'depreciated_value' },
+    escalationLadderCode: 'ESC-L3-MGMT',
+    ownerRole: 'project_manager',
+    description: 'Loss closed only with recovery (payroll/bill deduction) or approved write-off',
+    version: 1,
+    isActive: true
   }
 ];
 
@@ -573,7 +621,10 @@ export const controlPointModes: ControlPointMode[] = [
   { id: 'mode_004', cpCode: 'CP-WF-01', scopeType: 'company', scopeId: 'comp_001', scopeName: 'Acme Construction Ltd.', mode: 'OBSERVE', effectiveFrom: '2026-01-01', approvedBy: 'usr_admin_001' },
   { id: 'mode_005', cpCode: 'CP-PRT-01', scopeType: 'company', scopeId: 'comp_001', scopeName: 'Acme Construction Ltd.', mode: 'OBSERVE', effectiveFrom: '2026-01-01', approvedBy: 'usr_admin_001' },
   { id: 'mode_006', cpCode: 'CP-MAT-01', scopeType: 'project', scopeId: 'prj_001', scopeName: 'Riverside Tower', mode: 'WARN', effectiveFrom: '2026-01-10', approvedBy: 'usr_pm_001' },
-  { id: 'mode_007', cpCode: 'CP-FIN-01', scopeType: 'company', scopeId: 'comp_001', scopeName: 'Acme Construction Ltd.', mode: 'ENFORCE', effectiveFrom: '2026-01-05', approvedBy: 'usr_cfo_001' }
+  { id: 'mode_007', cpCode: 'CP-FIN-01', scopeType: 'company', scopeId: 'comp_001', scopeName: 'Acme Construction Ltd.', mode: 'ENFORCE', effectiveFrom: '2026-01-05', approvedBy: 'usr_cfo_001' },
+  { id: 'mode_008', cpCode: 'CP-TOL-01', scopeType: 'module', scopeId: 'tools', scopeName: 'Tool & Small-Asset Tracking', mode: 'OBSERVE', effectiveFrom: '2026-01-15', approvedBy: 'usr_admin_001' },
+  { id: 'mode_009', cpCode: 'CP-TOL-02', scopeType: 'module', scopeId: 'tools', scopeName: 'Tool & Small-Asset Tracking', mode: 'OBSERVE', effectiveFrom: '2026-01-15', approvedBy: 'usr_admin_001' },
+  { id: 'mode_010', cpCode: 'CP-TOL-03', scopeType: 'module', scopeId: 'tools', scopeName: 'Tool & Small-Asset Tracking', mode: 'OBSERVE', effectiveFrom: '2026-01-15', approvedBy: 'usr_admin_001' }
 ];
 
 // Thresholds

@@ -237,7 +237,6 @@ export const fixtureData = {
       { item: 'Cover Blocks 50mm', balance: 80, unit: 'Nos', reorderLevel: 200 },
       { item: 'Curing Compound', balance: 5, unit: 'Ltr', reorderLevel: 10 },
     ],
-    pendingGRNs: 6,
     inTransfers: 4,
     ageingData: [
       { material: 'Steel TMT 16mm', daysSinceLastMovement: 45, bucket: '31-90 days', value: 125000 },

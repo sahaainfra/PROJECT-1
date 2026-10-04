@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
 import { 
   Package, Shield, AlertTriangle, CheckCircle2, XCircle, TrendingUp, TrendingDown, 
-  Clipboard, Calendar, Loader2, Sun, Moon, Layer, RefreshCw, 
+  Clipboard, Calendar, Loader2, Sun, Moon, RefreshCw, 
   Mail, Phone, MapPin, Users, Settings, Printer, 
-  Menu, ChevronRight, LogOut, ArrowUpRightFromLine, ShieldMinus,
-  Document, Folder, Eye, Search as SearchIcon
+  Menu, ChevronRight, LogOut, ShieldMinus,
+  Folder, Eye, Search as SearchIcon
 } from 'lucide-react';
 import { KPIStat, StatusBadge, ProgressBar, GateStatusCard } from './widgets/WidgetShell';
 import { useState, useEffect } from 'react';
 import { systemInfo } from '../data/mockData';
 import { featureFlags } from '../data/mockData';
-import { protocolControls } from '../data/protocolData';
+import { protocolControls } from '../data/mockData';
 import { controlPointModes } from '../data/protocolData';
 import { observeImpactReports } from '../data/protocolData';
 import { kpiCatalogue } from '../data/previewData';
@@ -268,7 +268,7 @@ export function StoreDashboard({ persona, onFeedback }: StoreDashboardProps) {
       >
         <div className="px-6 py-4 border-b border-slate-100">
           <div className="flex gap-3" role="tablist">
-            <button role="tab" aria-controls="tab-grn" active className="flex-1 px-4 py-3 rounded-t-xl border-b-2 border-blue-600 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors">GRN Register</button>
+            <button role="tab" aria-controls="tab-grn" className="flex-1 px-4 py-3 rounded-t-xl border-b-2 border-blue-600 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors">GRN Register</button>
             <button role="tab" aria-controls="tab-issues" className="flex-1 px-4 py-3 rounded-t-xl border-b-2 border-transparent text-sm font-medium text-slate-500 hover:bg-slate-50 transition-colors">Issues</button>
             <button role="tab" aria-controls="tab-returns" className="flex-1 px-4 py-3 rounded-t-xl border-b-2 border-transparent text-sm font-medium text-slate-500 hover:bg-slate-50 transition-colors">Returns</button>
             <button role="tab" aria-controls="tab-transfers" className="flex-1 px-4 py-3 rounded-t-xl border-b-2 border-transparent text-sm font-medium text-slate-500 hover:bg-slate-50 transition-colors">Transfers</button>

@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { modules, baselineMetrics, regressionResults } from '../data/mockData';
 import { 
   Database, Shield, Flag, TestTube, BookOpen, CheckCircle2,
-  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard, Smartphone, Edit, Bell
+  TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard, Smartphone, Edit, Bell, Package
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa' | 'dpr' | 'wx' | 'gis' | 'proc' | 'pce';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa' | 'dpr' | 'wx' | 'gis' | 'proc' | 'pce' | 'stores';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
