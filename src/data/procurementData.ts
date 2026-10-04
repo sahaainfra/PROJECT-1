@@ -433,8 +433,8 @@ export const procQuotations: ProcQuotation[] = [
     gstInclusiveFlag: false,
     status: 'received',
     lines: [
-      { id: 'qtl_001', quotationId: 'qt_001', rfqLineId: 'rfl_001', materialName: 'OPC 53 Grade Cement', qty: 680, rate: 398, discountPct: 1.5, gstRate: 28, freight: 22, otherCharges: 0, landedRate: 414.23, brand: 'UltraTech', remarks: 'Ex-works plus freight; 1.5% discount on basic' },
-      { id: 'qtl_002', quotationId: 'qt_001', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', qty: 330, rate: 1385, discountPct: 0, gstRate: 5, freight: 48, otherCharges: 0, landedRate: 1502.25, brand: '—', remarks: 'Royalty included' }
+      { id: 'qtl_001', quotationId: 'qt_001', rfqLineId: 'rfl_001', materialName: 'OPC 53 Grade Cement', qty: 680, rate: 398, discountPct: 1.5, gstRate: 28, freight: 22, otherCharges: 0, landedRate: 414.03, brand: 'UltraTech', remarks: 'Ex-works plus freight; 1.5% discount on basic' },
+      { id: 'qtl_002', quotationId: 'qt_001', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', qty: 330, rate: 1385, discountPct: 0, gstRate: 5, freight: 48, otherCharges: 0, landedRate: 1433.00, brand: '—', remarks: 'Royalty included; recoverable GST excluded from comparison' }
     ]
   },
   {
@@ -453,7 +453,7 @@ export const procQuotations: ProcQuotation[] = [
     status: 'received',
     lines: [
       { id: 'qtl_003', quotationId: 'qt_002', rfqLineId: 'rfl_001', materialName: 'OPC 53 Grade Cement', qty: 680, rate: 402, discountPct: 0, gstRate: 28, freight: 30, otherCharges: 0, landedRate: 432.00, brand: 'JSW', remarks: 'Cement via associate mill' },
-      { id: 'qtl_004', quotationId: 'qt_002', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', qty: 330, rate: 1420, discountPct: 0, gstRate: 5, freight: 40, otherCharges: 0, landedRate: 1531.00, brand: '—', remarks: '' }
+      { id: 'qtl_004', quotationId: 'qt_002', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', qty: 330, rate: 1420, discountPct: 0, gstRate: 5, freight: 40, otherCharges: 0, landedRate: 1460.00, brand: '—', remarks: '' }
     ]
   },
   {
@@ -472,7 +472,7 @@ export const procQuotations: ProcQuotation[] = [
     status: 'received',
     lines: [
       { id: 'qtl_005', quotationId: 'qt_003', rfqLineId: 'rfl_001', materialName: 'OPC 53 Grade Cement', qty: 680, rate: 388, discountPct: 0, gstRate: 28, freight: 55, otherCharges: 12, landedRate: 455.00, brand: 'Ambuja', remarks: 'Lower basic but highest landed cost' },
-      { id: 'qtl_006', quotationId: 'qt_003', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', qty: 330, rate: 1395, discountPct: 0, gstRate: 5, freight: 52, otherCharges: 0, landedRate: 1516.95, brand: '—', remarks: '' }
+      { id: 'qtl_006', quotationId: 'qt_003', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', qty: 330, rate: 1395, discountPct: 0, gstRate: 5, freight: 52, otherCharges: 0, landedRate: 1447.00, brand: '—', remarks: '' }
     ]
   },
   {
@@ -510,8 +510,8 @@ export const procComparativeStatements: ProcComparativeStatement[] = [
     budgetRate: 430,
     lastPurchaseRate: 421,
     lines: [
-      { id: 'csl_001', csId: 'cs_001', rfqLineId: 'rfl_001', materialName: 'OPC 53 Grade Cement', vendorId: 'ven_001', vendorName: 'Shakti Cement Agencies', landedRate: 414.23, rank: 1, selectedQty: 680, isL1: true },
-      { id: 'csl_002', csId: 'cs_001', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', vendorId: 'ven_001', vendorName: 'Shakti Cement Agencies', landedRate: 1502.25, rank: 1, selectedQty: 330, isL1: true }
+      { id: 'csl_001', csId: 'cs_001', rfqLineId: 'rfl_001', materialName: 'OPC 53 Grade Cement', vendorId: 'ven_001', vendorName: 'Shakti Cement Agencies', landedRate: 414.03, rank: 1, selectedQty: 680, isL1: true },
+      { id: 'csl_002', csId: 'cs_001', rfqLineId: 'rfl_002', materialName: 'Coarse Aggregate 20mm', vendorId: 'ven_001', vendorName: 'Shakti Cement Agencies', landedRate: 1433.00, rank: 1, selectedQty: 330, isL1: true }
     ]
   }
 ];
@@ -533,18 +533,18 @@ export const procPurchaseOrders: ProcPurchaseOrder[] = [
     paymentTerms: '30 days from GRN',
     priceBasis: 'FOR',
     gstType: 'intra',
-    totalBasic: 731410,
-    totalTax: 195780.75,
-    totalAmount: 927190.75,
+    totalBasic: 754430.40,
+    totalTax: 102475.81,
+    totalAmount: 856906.21,
     status: 'PARTIALLY_RECEIVED',
     amendmentNo: 0,
     workflowInstanceId: 'wfi_0480',
     csId: 'cs_001',
     sourceType: 'cs',
-    commitmentAmount: 927190.75,
+    commitmentAmount: 856906.21,
     lines: [
-      { id: 'pol_001', poId: 'po_001', prLineId: 'prl_001', materialId: 'mat_cement', materialName: 'OPC 53 Grade Cement', description: 'OPC 53 Grade Cement, IS 269, brand UltraTech', qty: 680, uomName: 'Bag', rate: 414.23, discount: 0, taxCodeId: 'gst_28', amount: 281676.40, deliveredQty: 400, invoicedQty: 0, wbsNodeId: 'wbs_1.3', costCodeId: 'cc_mat_civil' },
-      { id: 'pol_002', poId: 'po_001', prLineId: 'prl_002', materialId: 'mat_aggregate', materialName: 'Coarse Aggregate 20mm', description: 'Coarse Aggregate 20mm, royalty included', qty: 330, uomName: 'Cum', rate: 1502.25, discount: 0, taxCodeId: 'gst_5', amount: 495742.50, deliveredQty: 0, invoicedQty: 0, wbsNodeId: 'wbs_1.3', costCodeId: 'cc_mat_civil' }
+      { id: 'pol_001', poId: 'po_001', prLineId: 'prl_001', materialId: 'mat_cement', materialName: 'OPC 53 Grade Cement', description: 'OPC 53 Grade Cement, IS 269, brand UltraTech', qty: 680, uomName: 'Bag', rate: 414.03, discount: 0, taxCodeId: 'gst_28', amount: 281540.40, deliveredQty: 400, invoicedQty: 0, wbsNodeId: 'wbs_1.3', costCodeId: 'cc_mat_civil' },
+      { id: 'pol_002', poId: 'po_001', prLineId: 'prl_002', materialId: 'mat_aggregate', materialName: 'Coarse Aggregate 20mm', description: 'Coarse Aggregate 20mm, royalty included', qty: 330, uomName: 'Cum', rate: 1433.00, discount: 0, taxCodeId: 'gst_5', amount: 472890.00, deliveredQty: 0, invoicedQty: 0, wbsNodeId: 'wbs_1.3', costCodeId: 'cc_mat_civil' }
     ]
   },
   {
@@ -563,14 +563,14 @@ export const procPurchaseOrders: ProcPurchaseOrder[] = [
     priceBasis: 'FOR',
     gstType: 'inter',
     totalBasic: 170000,
-    totalTax: 31230,
-    totalAmount: 201230,
+    totalTax: 30600,
+    totalAmount: 200600,
     status: 'RELEASED',
     amendmentNo: 0,
     workflowInstanceId: 'wfi_0469',
     sourceType: 'direct',
     directPoReason: 'Emergency replacement of Pier 3 bearing pads — direct PO under rate contract RC-2025-004; regularised within 24h (CP-PROC-06)',
-    commitmentAmount: 201230,
+    commitmentAmount: 200600,
     lines: [
       { id: 'pol_003', poId: 'po_002', materialId: 'mat_bearing', materialName: 'Elastomeric Bearing Pads 400x400', description: 'Elastomeric Bearing Pads 400x400, IRC:83, batch test certificate', qty: 4, uomName: 'No', rate: 42500, discount: 0, taxCodeId: 'gst_18_igst', amount: 170000, deliveredQty: 0, invoicedQty: 0, wbsNodeId: 'wbs_2.2', costCodeId: 'cc_mat_brdg' }
     ]
@@ -590,16 +590,16 @@ export const procPurchaseOrders: ProcPurchaseOrder[] = [
     paymentTerms: '50% advance',
     priceBasis: 'FOR',
     gstType: 'inter',
-    totalBasic: 186000,
-    totalTax: 9300,
-    totalAmount: 195300,
+    totalBasic: 124000,
+    totalTax: 14880,
+    totalAmount: 138880,
     status: 'SHORT_CLOSED',
     amendmentNo: 1,
     workflowInstanceId: 'wfi_0455',
     sourceType: 'cs',
     commitmentAmount: 0,
     lines: [
-      { id: 'pol_004', poId: 'po_003', materialId: 'mat_shutter', materialName: 'Shuttering Ply 12mm', description: 'Shuttering Ply 12mm BWR grade', qty: 120, uomName: 'SqM', rate: 1550, discount: 0, taxCodeId: 'gst_12_igst', amount: 186000, deliveredQty: 80, invoicedQty: 80, wbsNodeId: 'wbs_1.4', costCodeId: 'cc_mat_fin' }
+      { id: 'pol_004', poId: 'po_003', materialId: 'mat_shutter', materialName: 'Shuttering Ply 12mm', description: 'Shuttering Ply 12mm BWR grade', qty: 80, uomName: 'SqM', rate: 1550, discount: 0, taxCodeId: 'gst_12_igst', amount: 124000, deliveredQty: 80, invoicedQty: 80, wbsNodeId: 'wbs_1.4', costCodeId: 'cc_mat_fin' }
     ]
   }
 ];
@@ -656,8 +656,8 @@ export const procVendorPerformance: ProcVendorPerformance[] = [
 
 // Sample price variance (PO rate vs budget rate vs last purchase rate; alert above threshold 5%)
 export const procPriceVariance: ProcPriceVariance[] = [
-  { id: 'pv_001', materialName: 'OPC 53 Grade Cement', poNo: 'PO-2025-0204', poRate: 414.23, budgetRate: 430, lastPurchaseRate: 421, varianceVsBudgetPct: -3.67, varianceVsLastPct: -1.61, alert: false },
-  { id: 'pv_002', materialName: 'Coarse Aggregate 20mm', poNo: 'PO-2025-0204', poRate: 1502.25, budgetRate: 1450, lastPurchaseRate: 1478, varianceVsBudgetPct: 3.60, varianceVsLastPct: 1.64, alert: false },
+  { id: 'pv_001', materialName: 'OPC 53 Grade Cement', poNo: 'PO-2025-0204', poRate: 414.03, budgetRate: 430, lastPurchaseRate: 421, varianceVsBudgetPct: -3.71, varianceVsLastPct: -1.66, alert: false },
+  { id: 'pv_002', materialName: 'Coarse Aggregate 20mm', poNo: 'PO-2025-0204', poRate: 1433.00, budgetRate: 1450, lastPurchaseRate: 1478, varianceVsBudgetPct: -1.17, varianceVsLastPct: -3.05, alert: false },
   { id: 'pv_003', materialName: 'Elastomeric Bearing Pads 400x400', poNo: 'PO-2025-0198', poRate: 44300, budgetRate: 46000, lastPurchaseRate: 45200, varianceVsBudgetPct: -3.70, varianceVsLastPct: -1.99, alert: false }
 ];
 

@@ -25,16 +25,25 @@ Rule: if a requirement can only be met by violating the preservation rule, it is
 |---|---|---|
 | C32-1 | Same missing prerequisite documents as C30-1 | Same resolution — code-level discovery; no preservation rule violated. |
 | C32-2 | No map provider library (leaflet/mapbox/google-maps) exists in the frontend stack; Part 80 map provider not delivered | Map workspace delivered as an original SVG schematic visualization (no vendor logos/code); coordinates stored and displayed in WGS84 per the business rule. Real map tiles are deferred to Part 80/103. |
-| C32-3 | Pre-existing inconsistency: `ff.wa`/`ff.site` badges display "Active" in dashboards but are not present in the `featureFlags` registry in `mockData.ts` | Not altered (pre-existing behaviour preserved). `ff.dpr`, `ff.dpr.voice`, `ff.weather`, `ff.weather.provider`, `ff.gis` were added to the registry default OFF without touching existing entries. |
+| C32-3 | Pre-existing inconsistency: `ff.wa`/`ff.site` badges display "Active" in dashboards but are not present in the `featureFlags` registry in `mockData.ts` | Resolved during the Parts 0–34 audit: all missing module flags (Parts 1–29) added to the registry default OFF (`ff.preview` ON per the shell status bar) without touching existing entries. |
 
 ## Part 34 — Advanced Procurement
 
 | # | Conflict / deviation | Resolution |
 |---|---|---|
 | C34-1 | Same missing prerequisite documents as C30-1 (`00_READ_FIRST/*`, `EXISTING_SYSTEM_MAP.md`, `DB_ENTITY_MAP.csv`) | Same resolution — code-level discovery; no preservation rule violated. |
-| C34-2 | Part 33 (Planned vs Budgeted vs Actual Engine) was explored but not implemented by the prior session — no code, docs or flags exist for it. Part 33 is not a dependency of Part 34 (depends on Parts 6, 11, 20, 25, 26) | Part 34 implemented as directed; Part 33 completion recorded in the handoff note as pending. The PCE fact store (`pce_facts`) will consume procurement commitments (CP-PCE-01) when Part 33 is delivered. |
+| C34-2 | Part 33 (Planned vs Budgeted vs Actual Engine) was explored but not implemented by the prior session — no code, docs or flags exist for it. Part 33 is not a dependency of Part 34 (depends on Parts 6, 11, 20, 25, 26) | Part 34 implemented as directed; Part 33 was subsequently completed (see Part 33 section below and PART33_IMPLEMENTATION.md). The PCE fact store (`pce_facts`) consumes procurement commitments (CP-PCE-01). |
 | C34-3 | Part 35 (Stores/GRN) does not exist in this workspace; procurement acceptance criterion "PR → PO → GRN" cannot be fully demonstrated | Dispatch/ASN recording delivered with arrived status; GRN deferred to Part 35 and recorded in the handoff note. |
 | C34-4 | Parts 88 (GST tax engine) and 91 (rate observations) not yet live | Data model and UI carry the documented contract: GST by tax resolver (Part 11) with parallel comparison before switching to Part 88; PO-rate benchmark uses budget/last-purchase rates until Part 91 becomes the single source. |
+| C34-5 | Arithmetic/data defects in the Part 34 sample data found during the Parts 0–34 audit: (a) po_001 header totalBasic ≠ Σ line amounts; (b) qt_001 cement landedRate 414.23 vs correct 414.03 (basic 398 − 1.5% + freight 22); (c) aggregate landed rates included 5% GST (basic×1.05+freight) contrary to the documented formula (recoverable GST excluded, `gst_inclusive_flag: false`); (d) po_002 tax 31,230 vs 18% IGST = 30,600; (e) po_003 header totals and line not updated after amendment 1 (qty 120→80), and header tax 5% inconsistent with `gst_12_igst` code | Fixed (new-module data-layer defect fixes per the C30-4 precedent — no legacy data altered): landed rates recomputed per the documented formula (cement 414.03; aggregates 1433/1460/1447), PO totals recomputed from lines (po_001 basic 754,430.40 / tax 102,475.81 / total 856,906.21; po_002 tax 30,600 / total 200,600; po_003 post-amendment basic 124,000 / tax 14,880 / total 138,880), price variance and PCE commitment-coverage cross-references updated. |
+
+## Part 33 — Planned vs Budgeted vs Actual Engine (Project Control Engine)
+
+| # | Conflict / deviation | Resolution |
+|---|---|---|
+| C33-1 | Same missing prerequisite documents as C30-1 | Same resolution — code-level discovery; no preservation rule violated. |
+| C33-2 | Part 33 was implemented after Part 34 in this workspace (program sequence deviation: user directed Part 34 first) | Part 33 completed as directed afterwards; Part 34's PO commitments referenced as the procurement-group source. No preservation rule violated. |
+| C33-3 | Part 46 (Billing) not yet live; no materialized-view capability exposed in this workspace | Billing group modelled with documented contract (certified/billed/collected); `pce_facts` delivered as typed data layer — table or materialised views per DB capability deferred to backend delivery (Parts 120–130). |
 
 ## Deferred items
 
