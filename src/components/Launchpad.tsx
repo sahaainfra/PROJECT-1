@@ -1255,9 +1255,44 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">📈</div>
           </div>
+</div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 3.05 }}
+        className="bg-gradient-to-r from-violet-700 via-purple-700 to-indigo-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 35 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.stores</span>
+            </div>
+            <h2 className="text-xl font-bold">Advanced Stores & Inventory</h2>
+            <p className="text-sm text-cyan-100 mt-1 max-w-lg">
+              Complete stores & warehouse management: GRN/MRN with inspection hold, stock ledger with valuation,
+              issues to activities, returns, inter-site transfers, consumption, adjustments, physical verification,
+              ageing/dead stock, reorder and barcode/QR — posting cost and inventory to finance.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button
+                onClick={() => onNavigate('stores')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-cyan-700 rounded-lg text-sm font-semibold hover:bg-cyan-50 transition-colors shadow-sm"
+              >
+                <Package size={16} />
+                View Stores
+              </button>
+              <span className="text-[10px] text-cyan-200">9 control points · stock ledger · ageing · reorder · labels</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">📦</div>
+          </div>
         </div>
       </motion.div>
-      </div>
+    </div>
 
       {/* Bottom Row: Activity + Navigation Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -412,9 +412,12 @@ export const widgetData = {
 // Quick Actions
 export const quickActions: QuickAction[] = [
   { code: 'create-po', label: 'Create PO', icon: '📦', permission: 'mat.po.create', action: '/materials/po/new', color: 'blue' },
-  { code: 'create-pr', label: 'Create PR', icon: '📋', permission: 'mat.pr.create', action: '/materials/pr/new', color: 'green' },
+  { code: 'create-pr', label: 'Create PR', icon: '𓋰', permission: 'mat.pr.create', action: '/materials/pr/new', color: 'green' },
+  { code: 'create-issue', label: 'Create Issue', icon: '📤', permission: 'mat.issue.create', action: '/materials/issue/new', color: 'orange' },
+  { code: 'create-return', label: 'Create Return', icon: '📤', permission: 'mat.return.create', action: '/materials/return/new', color: 'cyan' },
+  { code: 'create-transfer', label: 'Create Transfer', icon: '🔄', permission: 'mat.transfer.create', action: '/materials/transfer/new', color: 'teal' },
+  { code: 'create-adjustment', label: 'Create Adjustment', icon: '⚖️', permission: 'mat.adjustment.create', action: '/materials/adjustment/new', color: 'blue' },
   { code: 'create-grn', label: 'Create GRN', icon: '📥', permission: 'mat.grn.create', action: '/materials/grn/new', color: 'purple' },
-  { code: 'create-invoice', label: 'Create Invoice', icon: '🧾', permission: 'fin.invoice.create', action: '/finance/invoice/new', color: 'amber' },
   { code: 'request-exception', label: 'Request Exception', icon: '⚠️', permission: 'protocol.exception.request', action: '/protocol/exception/new', color: 'red' }
 ];
 
