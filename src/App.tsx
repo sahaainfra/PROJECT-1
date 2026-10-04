@@ -41,9 +41,13 @@ import { PlanningDashboard } from './components/PlanningDashboard';
 import { ProgressDashboard } from './components/ProgressDashboard';
 import { SiteExecutionDashboard } from './components/SiteExecutionDashboard';
 import { WorkAuthorisationDashboard } from './components/WorkAuthorisationDashboard';
+import { DPRDashboard } from './components/DPRDashboard';
+import { WeatherDashboard } from './components/WeatherDashboard';
+import { GISDashboard } from './components/GISDashboard';
+import { ProcurementDashboard } from './components/ProcurementDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa' | 'dpr' | 'wx' | 'gis' | 'proc';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -76,6 +80,10 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'progress', label: 'Progress & EVM', icon: <FileText size={20} />, highlight: true },
   { id: 'site', label: 'Site Execution', icon: <FileText size={20} />, highlight: true },
   { id: 'wa', label: 'Work Authorisation', icon: <FileText size={20} />, highlight: true },
+  { id: 'dpr', label: 'DPR / Field Execution', icon: <FileText size={20} />, highlight: true },
+  { id: 'wx', label: 'Weather & Site Conditions', icon: <FileText size={20} />, highlight: true },
+  { id: 'gis', label: 'GIS & Location', icon: <FileText size={20} />, highlight: true },
+  { id: 'proc', label: 'Procurement', icon: <FileText size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
   { id: 'protocol', label: 'Protocol Controls', icon: <Shield size={20} /> },
@@ -132,6 +140,10 @@ export default function App() {
       case 'progress': return <ProgressDashboard />;
       case 'site': return <SiteExecutionDashboard />;
       case 'wa': return <WorkAuthorisationDashboard />;
+      case 'dpr': return <DPRDashboard />;
+      case 'wx': return <WeatherDashboard />;
+      case 'gis': return <GISDashboard />;
+      case 'proc': return <ProcurementDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }
   };

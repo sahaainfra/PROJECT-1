@@ -5,7 +5,7 @@ import {
   TrendingUp, Clock, AlertCircle, ArrowRight, Eye, Search, AlertTriangle, Activity, Building2, Key, FileText, Users, Settings, LayoutDashboard, Smartphone, Edit, Bell
 } from 'lucide-react';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa' | 'dpr' | 'wx' | 'gis' | 'proc';
 
 interface LaunchpadProps {
   onNavigate: (view: View) => void;
@@ -1084,6 +1084,142 @@ export function Launchpad({ onNavigate }: LaunchpadProps) {
           </div>
           <div className="hidden lg:block">
             <div className="text-6xl opacity-50">📋</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2.85 }}
+        className="bg-gradient-to-r from-sky-600 via-blue-600 to-sky-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 30 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.dpr</span>
+            </div>
+            <h2 className="text-xl font-bold">DPR / Field Execution</h2>
+            <p className="text-sm text-sky-100 mt-1 max-w-lg">
+              Mobile-first Daily Progress Report: activities, labour, materials, equipment, weather, photos and HSE
+              observations — prefilled from the daily plan, the single daily source for progress and evidence.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button
+                onClick={() => onNavigate('dpr')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-sky-700 rounded-lg text-sm font-semibold hover:bg-sky-50 transition-colors shadow-sm"
+              >
+                <FileText size={16} />
+                View DPR
+              </button>
+              <span className="text-[10px] text-sky-200">6 control points · offline capture · voice-to-DPR</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">📝</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2.9 }}
+        className="bg-gradient-to-r from-cyan-600 via-sky-600 to-cyan-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 31 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.weather</span>
+            </div>
+            <h2 className="text-xl font-bold">Weather & Site Condition Management</h2>
+            <p className="text-sm text-cyan-100 mt-1 max-w-lg">
+              Rainfall, temperature, humidity, wind, weather shutdowns and concrete restrictions per site —
+              linked to DPR, Schedule, Delay and EOT so weather delays are provable.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button
+                onClick={() => onNavigate('wx')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-cyan-700 rounded-lg text-sm font-semibold hover:bg-cyan-50 transition-colors shadow-sm"
+              >
+                <FileText size={16} />
+                View Weather
+              </button>
+              <span className="text-[10px] text-cyan-200">2 control points · shutdown → delay links · history</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">🌦️</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2.95 }}
+        className="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 32 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.gis</span>
+            </div>
+            <h2 className="text-xl font-bold">GIS, Survey & Site Location Intelligence</h2>
+            <p className="text-sm text-emerald-100 mt-1 max-w-lg">
+              Site boundaries, coordinates, chainages, structures and location-linked records with a progress
+              heatmap and BOQ-to-location mapping — location as a shared dimension of control.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button
+                onClick={() => onNavigate('gis')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-emerald-700 rounded-lg text-sm font-semibold hover:bg-emerald-50 transition-colors shadow-sm"
+              >
+                <FileText size={16} />
+                View GIS
+              </button>
+              <span className="text-[10px] text-emerald-200">7 layers · heatmap · chainage references</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">🗺️</div>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 3.0 }}
+        className="bg-gradient-to-r from-amber-700 via-orange-700 to-amber-800 rounded-xl p-5 text-white shadow-lg relative overflow-hidden"
+      >
+        <div className="relative flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-bold bg-white/20 px-2 py-0.5 rounded-full uppercase tracking-wider">Part 34 · New</span>
+              <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded">ff.proc</span>
+            </div>
+            <h2 className="text-xl font-bold">Advanced Procurement</h2>
+            <p className="text-sm text-amber-100 mt-1 max-w-lg">
+              Full procurement chain: MRP from BOQ norms → PR → RFQ → quotation → comparative statement → PO → dispatch,
+              with budget checks, landed-cost comparison, vendor scorecards and commitments feeding cost control.
+            </p>
+            <div className="flex items-center gap-3 mt-3">
+              <button
+                onClick={() => onNavigate('proc')}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-amber-700 rounded-lg text-sm font-semibold hover:bg-amber-50 transition-colors shadow-sm"
+              >
+                <FileText size={16} />
+                View Procurement
+              </button>
+              <span className="text-[10px] text-amber-200">8 control points · MRP workbench · CS matrix · vendor scorecards</span>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="text-6xl opacity-50">🛒</div>
           </div>
         </div>
       </motion.div>

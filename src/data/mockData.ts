@@ -45,6 +45,14 @@ export const featureFlags = [
   { key: 'ff.core.protocol', description: 'Protocol & Control engine', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 7' },
   { key: 'ff.core.audit', description: 'Central audit trail', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 3' },
   { key: 'ff.core.notify', description: 'Notification engine', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 3' },
+  { key: 'ff.dpr', description: 'DPR / Field Execution module (Part 30)', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 30' },
+  { key: 'ff.dpr.voice', description: 'Voice-to-DPR AI draft (labelled, never auto-submitted)', scope: 'project', enabled: false, rolloutPercent: 0, owner: 'Part 30' },
+  { key: 'ff.weather', description: 'Weather & Site Condition Management module (Part 31)', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 31' },
+  { key: 'ff.weather.provider', description: 'External weather provider integration (Part 80)', scope: 'project', enabled: false, rolloutPercent: 0, owner: 'Part 31' },
+  { key: 'ff.gis', description: 'GIS, Survey & Site Location Intelligence module (Part 32)', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 32' },
+  { key: 'ff.proc', description: 'Advanced Procurement module (Part 34)', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 34' },
+  { key: 'ff.proc.mrp', description: 'MRP workbench (Part 34)', scope: 'project', enabled: false, rolloutPercent: 0, owner: 'Part 34' },
+  { key: 'ff.proc.vendor_portal', description: 'Secure vendor response link (Part 34)', scope: 'project', enabled: false, rolloutPercent: 0, owner: 'Part 34' },
 ];
 
 export const protocolControls = [
