@@ -241,9 +241,12 @@ export function ProgressBar({ value, max = 100, color = 'blue', showLabel = true
 
 // Gate Status Card
 interface GateStatusProps {
-  gate: string;
-  status: string;
-  checkedBy: string;
+  gate?: string;
+  status?: string;
+  checkedBy?: string;
+  protocolModes?: string[];
+  protocolResults?: string[];
+  cpLabels?: string[];
 }
 
 export function GateStatusCard({ gate, status, checkedBy }: GateStatusProps) {

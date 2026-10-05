@@ -418,7 +418,8 @@ export const quickActions: QuickAction[] = [
   { code: 'create-transfer', label: 'Create Transfer', icon: '🔄', permission: 'mat.transfer.create', action: '/materials/transfer/new', color: 'teal' },
   { code: 'create-adjustment', label: 'Create Adjustment', icon: '⚖️', permission: 'mat.adjustment.create', action: '/materials/adjustment/new', color: 'blue' },
   { code: 'create-grn', label: 'Create GRN', icon: '📥', permission: 'mat.grn.create', action: '/materials/grn/new', color: 'purple' },
-  { code: 'request-exception', label: 'Request Exception', icon: '⚠️', permission: 'protocol.exception.request', action: '/protocol/exception/new', color: 'red' }
+  { code: 'request-exception', label: 'Request Exception', icon: '⚠️', permission: 'protocol.exception.request', action: '/protocol/exception/new', color: 'red' },
+  { code: 'create-tool', label: 'Register Tool', icon: '🛠️', permission: 'tools.item.register', action: '/tools/item/register', color: 'forest' }
 ];
 
 // Protocol Control Points

@@ -1,0 +1,732 @@
+src/components/ToolsDashboard.tsx(206,8): error TS17008: JSX element 'motion.div' has no corresponding closing tag.
+src/components/ToolsDashboard.tsx(220,17): error TS2657: JSX expressions must have one parent element.
+src/components/ToolsDashboard.tsx(223,156): error TS1005: '}' expected.
+src/components/ToolsDashboard.tsx(223,158): error TS17002: Expected corresponding JSX closing tag for 'div'.
+src/components/ToolsDashboard.tsx(226,17): error TS1005: ')' expected.
+src/components/ToolsDashboard.tsx(228,13): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/ToolsDashboard.tsx(228,15): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/ToolsDashboard.tsx(231,7): error TS1005: ')' expected.
+src/components/ToolsDashboard.tsx(235,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(235,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(236,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(236,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(236,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(237,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(237,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(273,7): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(277,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(277,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(277,40): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(278,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(278,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(278,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(279,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(279,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(282,9): error TS2657: JSX expressions must have one parent element.
+src/components/ToolsDashboard.tsx(318,7): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(322,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(322,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(322,39): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(323,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(323,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(323,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(324,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(324,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(370,7): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(374,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(374,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(374,39): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(375,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(375,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(375,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(376,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(376,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(412,11): error TS1005: '}' expected.
+src/components/ToolsDashboard.tsx(414,7): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(418,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(418,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(418,39): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(419,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(419,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(419,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(420,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(420,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(436,19): error TS2657: JSX expressions must have one parent element.
+src/components/ToolsDashboard.tsx(443,17): error TS1005: '}' expected.
+src/components/ToolsDashboard.tsx(445,13): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/ToolsDashboard.tsx(447,9): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(448,7): error TS1109: Expression expected.
+src/components/ToolsDashboard.tsx(452,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(452,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(452,39): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(453,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(453,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(453,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(454,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(454,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(457,9): error TS2657: JSX expressions must have one parent element.
+src/components/ToolsDashboard.tsx(497,7): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(501,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(501,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(501,39): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(502,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(502,33): error TS1005: ';' expected.
+src/components/ToolsDashboard.tsx(502,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(503,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard.tsx(503,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(526,7): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard.tsx(527,5): error TS1109: Expression expected.
+src/components/ToolsDashboard.tsx(528,3): error TS1109: Expression expected.
+src/components/ToolsDashboard.tsx(529,1): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(91,12): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(91,21): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(92,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(92,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(93,19): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(93,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(93,70): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(94,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(94,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(94,80): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(94,89): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(95,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(95,54): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(95,68): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(95,80): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(96,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(96,53): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(96,62): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(96,67): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(96,71): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(96,79): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(96,85): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(96,91): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(96,94): error TS1435: Unknown keyword or identifier. Did you mean 'accessor'?
+src/components/ToolsDashboard_tmp.ts(96,101): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(96,106): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(96,129): error TS1003: Identifier expected.
+src/components/ToolsDashboard_tmp.ts(96,130): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(98,22): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(98,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(101,22): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(101,25): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(102,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(103,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(104,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(105,5): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(127,10): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(127,19): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(130,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(130,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(130,39): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(131,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(131,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(131,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(132,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(132,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(135,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(135,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(136,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(136,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(138,19): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(138,28): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(138,84): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(138,93): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(139,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(139,58): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(139,61): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(139,68): error TS1127: Invalid character.
+src/components/ToolsDashboard_tmp.ts(139,89): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(139,98): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(140,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(141,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(142,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(142,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(142,147): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(143,28): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(144,16): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(145,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(146,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(147,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(148,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(152,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(152,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(152,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(153,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(153,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(153,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(154,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(154,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(157,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(157,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(158,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(158,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(160,18): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(160,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(160,100): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(160,106): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(161,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(161,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(161,78): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(162,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(163,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(164,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(166,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(167,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(167,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(169,18): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(169,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(169,97): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(169,103): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(170,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(170,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(170,80): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(171,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(172,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(173,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(175,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(176,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(176,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(178,18): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(178,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(178,101): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(179,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(179,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(179,79): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(180,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(181,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(182,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(184,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(185,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(185,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(187,18): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(187,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(187,97): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(187,105): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(188,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(188,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(188,82): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(189,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(190,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(191,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(193,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(194,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(194,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(196,18): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(196,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(196,100): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(196,107): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(197,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(197,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(197,84): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(198,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(199,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(200,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(202,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(203,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(203,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(205,18): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(205,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(205,99): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(206,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(206,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(206,77): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(207,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(208,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(209,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(211,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(212,16): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(212,25): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(214,18): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(214,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(214,103): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(215,18): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(215,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(215,81): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(216,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(217,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(218,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(219,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(223,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(223,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(223,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(224,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(224,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(224,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(225,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(225,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(228,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(228,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(229,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(229,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(229,78): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(229,87): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(230,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(231,31): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(239,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(239,25): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(239,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(239,41): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(239,78): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(240,24): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(240,33): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(241,27): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(241,36): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(241,85): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(242,34): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(242,50): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(242,61): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(243,20): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(244,22): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(244,63): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(244,73): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(245,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(246,16): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(247,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(247,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(248,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(249,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(250,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(254,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(254,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(254,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(255,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(255,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(255,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(256,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(256,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(259,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(259,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(260,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(260,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(260,74): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(260,84): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(261,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(262,27): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(266,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(266,25): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(266,35): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(267,24): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(267,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(268,27): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(268,36): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(268,87): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(269,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(269,80): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(269,89): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(269,95): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(270,20): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(271,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(272,35): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(275,30): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(275,33): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(275,38): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(275,49): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(276,26): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(276,33): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(276,101): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(277,33): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(277,42): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(277,71): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(277,80): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(278,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(278,55): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(278,62): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(278,75): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(279,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(279,65): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(279,72): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(279,106): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(280,26): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(281,23): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(281,24): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(282,22): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(282,23): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(284,28): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(284,37): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(285,40): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(285,53): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(286,24): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(287,21): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(288,20): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(289,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(290,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(291,13): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(291,14): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(291,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(292,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(293,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(294,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(298,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(298,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(298,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(299,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(299,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(299,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(300,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(300,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(303,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(303,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(304,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(304,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(304,81): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(304,89): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(305,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(306,29): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(307,20): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(307,23): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(307,28): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(308,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(308,31): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(309,25): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(309,34): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(309,81): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(309,92): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(310,25): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(310,69): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(310,88): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(310,104): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(310,110): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(311,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(312,22): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(314,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(314,30): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(314,32): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(314,157): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(315,28): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(315,101): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(316,19): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(316,21): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(317,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(318,20): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(318,68): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(318,78): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(318,111): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(319,16): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(320,13): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(320,14): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(320,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(321,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(322,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(324,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(325,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(325,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(325,74): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(325,88): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(325,94): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(326,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(327,23): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(331,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(331,25): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(331,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(331,41): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(331,115): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(332,25): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(332,34): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(332,81): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(332,89): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(332,96): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(332,103): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(332,108): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(332,116): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(333,25): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(333,67): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(333,74): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(333,93): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(333,98): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(333,108): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(333,124): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(334,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(335,16): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(336,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(336,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(337,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(338,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(339,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(343,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(343,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(343,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(344,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(344,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(344,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(345,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(345,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(348,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(348,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(349,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(349,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(349,77): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(349,84): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(350,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(351,20): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(351,29): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(353,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(353,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(354,23): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(354,32): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(354,91): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(354,94): error TS1003: Identifier expected.
+src/components/ToolsDashboard_tmp.ts(354,95): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(355,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(355,92): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(356,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(356,92): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(357,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(357,92): error TS1127: Invalid character.
+src/components/ToolsDashboard_tmp.ts(357,97): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(358,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(358,92): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(359,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(359,100): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(360,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(361,16): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(366,25): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(366,28): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(366,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(367,27): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(367,36): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(367,58): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(367,66): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(368,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(368,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(368,83): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(369,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(370,29): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(371,24): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(372,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(373,29): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(373,41): error TS1127: Invalid character.
+src/components/ToolsDashboard_tmp.ts(374,24): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(375,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(375,58): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(375,65): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(376,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(376,75): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(377,22): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(378,19): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(379,18): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(379,19): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(382,25): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(382,34): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(382,52): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(382,62): error TS1005: ':' expected.
+src/components/ToolsDashboard_tmp.ts(383,40): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(383,53): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(384,22): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(385,20): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(386,17): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(387,16): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(388,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(389,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(390,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(391,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(395,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(395,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(395,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(396,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(396,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(396,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(397,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(397,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(400,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(400,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(401,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(401,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(401,89): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(402,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(403,32): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(414,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(414,25): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(414,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(414,41): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(414,174): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(415,24): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(415,33): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(417,29): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(417,38): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(417,89): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(417,102): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(418,29): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(418,75): error TS1121: Octal literals are not allowed. Use the syntax '-0o0'.
+src/components/ToolsDashboard_tmp.ts(418,79): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(418,83): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(418,87): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(418,89): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(419,22): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(420,27): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(420,38): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(420,156): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(420,157): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(421,32): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(422,22): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(423,20): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(424,22): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(425,30): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(425,40): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(425,51): error TS1434: Unexpected keyword or identifier.
+src/components/ToolsDashboard_tmp.ts(426,20): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(427,22): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(428,30): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(428,66): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(429,20): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(430,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(431,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(432,13): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(432,14): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(432,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(433,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(434,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(435,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(439,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(439,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(439,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(440,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(440,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(440,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(441,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(441,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(444,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(444,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(445,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(445,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(445,77): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(445,91): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(446,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(447,38): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(456,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(456,25): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(456,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(456,41): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(456,175): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(457,24): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(457,33): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(458,27): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(458,36): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(458,82): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(458,99): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(459,27): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(459,69): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(459,90): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(459,110): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(459,120): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(460,20): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(461,22): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(462,27): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(462,33): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(462,42): error TS1127: Invalid character.
+src/components/ToolsDashboard_tmp.ts(462,48): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(463,20): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(464,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(465,16): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(466,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(466,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(467,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(468,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(469,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(473,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(473,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(473,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(474,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(474,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(474,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(475,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(475,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(478,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(478,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(479,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(479,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(479,81): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(480,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(481,31): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(492,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(492,25): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(492,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(492,41): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(492,74): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(493,25): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(493,34): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(493,96): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(494,22): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(494,31): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(494,74): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(494,81): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(495,18): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(496,16): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(497,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(497,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(498,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(499,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(501,14): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(502,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(502,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(502,73): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(502,81): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(503,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(505,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(505,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(505,66): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(506,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(506,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(506,78): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(506,91): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(506,103): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(507,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(509,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(509,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(509,68): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(510,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(510,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(510,66): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(510,81): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(510,97): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(511,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(513,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(513,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(513,68): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(514,21): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(514,30): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(514,66): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(514,88): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(514,104): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(514,112): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(515,14): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(516,12): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(517,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(518,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(522,9): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(522,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(522,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(523,18): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(523,33): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(523,38): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(524,21): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(524,35): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(527,14): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(527,23): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(528,15): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(528,24): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(528,75): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(528,83): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(529,16): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(533,14): error TS1005: ':' expected.
+src/components/ToolsDashboard_tmp.ts(538,27): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(538,30): error TS1005: ')' expected.
+src/components/ToolsDashboard_tmp.ts(538,35): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(538,46): error TS1136: Property assignment expected.
+src/components/ToolsDashboard_tmp.ts(538,431): error TS1109: Expression expected.
+src/components/ToolsDashboard_tmp.ts(539,27): error TS1005: '>' expected.
+src/components/ToolsDashboard_tmp.ts(539,36): error TS1005: ';' expected.
+src/components/ToolsDashboard_tmp.ts(539,70): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(539,77): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(541,20): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(542,17): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(542,18): error TS1005: ',' expected.
+src/components/ToolsDashboard_tmp.ts(545,13): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(545,14): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(545,15): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(546,12): error TS1110: Type expected.
+src/components/ToolsDashboard_tmp.ts(547,10): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(548,8): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(549,6): error TS1161: Unterminated regular expression literal.
+src/components/ToolsDashboard_tmp.ts(550,3): error TS1128: Declaration or statement expected.
+src/components/ToolsDashboard_tmp.ts(551,1): error TS1128: Declaration or statement expected.

@@ -47,9 +47,10 @@ import { GISDashboard } from './components/GISDashboard';
 import { ProcurementDashboard } from './components/ProcurementDashboard';
 import { PCEDashboard } from './components/PCEDashboard';
 import { StoreDashboard } from './components/StoreDashboard';
+import { ToolsDashboard } from './components/ToolsDashboard';
 import { systemInfo } from './data/mockData';
 
-type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa' | 'dpr' | 'wx' | 'gis' | 'proc' | 'pce' | 'stores';
+type View = 'launchpad' | 'baseline' | 'flags' | 'protocol' | 'regression' | 'docs' | 'acceptance' | 'preview' | 'audit' | 'core' | 'org' | 'iam' | 'wf' | 'protocol-engine' | 'audit-sec' | 'security' | 'acc' | 'mdm' | 'xls' | 'design-system' | 'dashboard' | 'responsive' | 'data-entry' | 'search' | 'notifications' | 'project' | 'boq' | 'crm' | 'tender' | 'estimation' | 'qs' | 'budget' | 'planning' | 'progress' | 'site' | 'wa' | 'dpr' | 'wx' | 'gis' | 'proc' | 'pce' | 'stores' | 'tools';
 
 const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: boolean }[] = [
   { id: 'launchpad', label: 'Launchpad', icon: <LayoutDashboard size={20} /> },
@@ -87,6 +88,7 @@ const navItems: { id: View; label: string; icon: React.ReactNode; highlight?: bo
   { id: 'gis', label: 'GIS & Location', icon: <FileText size={20} />, highlight: true },
   { id: 'proc', label: 'Procurement', icon: <FileText size={20} />, highlight: true },
   { id: 'stores', label: 'Stores & Inventory', icon: <Package size={20} />, highlight: true },
+  { id: 'tools', label: 'Tools & Small-Asset', icon: <Users size={20} />, highlight: true },
   { id: 'pce', label: 'Project Control Engine', icon: <Shield size={20} />, highlight: true },
   { id: 'baseline', label: 'System Baseline', icon: <Database size={20} /> },
   { id: 'flags', label: 'Feature Flags', icon: <Flag size={20} /> },
@@ -149,6 +151,7 @@ export default function App() {
       case 'gis': return <GISDashboard />;
       case 'proc': return <ProcurementDashboard />;
       case 'stores': return <StoreDashboard persona="system-admin" />;
+      case 'tools': return <ToolsDashboard persona="system-admin" />;
       case 'pce': return <PCEDashboard />;
       default: return <Launchpad onNavigate={setCurrentView} />;
     }

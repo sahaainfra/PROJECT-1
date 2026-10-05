@@ -56,18 +56,6 @@ export function StoreDashboard({ persona, onFeedback }: StoreDashboardProps) {
   const [ffBarcode, setFfBarcode] = useState(false);
   const [ffPlantStore, setFfPlantStore] = useState(false);
 
-  useEffect(() => {
-    setFfStores(useFeatureFlag('ff.stores'));
-    setFfGrn(useFeatureFlag('ff.stores.grn'));
-    setFfIssue(useFeatureFlag('ff.stores.issue'));
-    setFfTransfer(useFeatureFlag('ff.stores.transfer'));
-    setFfAdjustment(useFeatureFlag('ff.stores.adjustment'));
-    setFfPv(useFeatureFlag('ff.stores.physical-verification'));
-    setFfReorder(useFeatureFlag('ff.stores.reorder'));
-    setFfBarcode(useFeatureFlag('ff.stores.barcode'));
-    setFfPlantStore(useFeatureFlag('ff.stores.plant_store'));
-  }, []);
-
   if (!ffStores) {
     return (
       <div className="p-6 bg-slate-50 min-h-screen">
@@ -181,12 +169,26 @@ export function StoreDashboard({ persona, onFeedback }: StoreDashboardProps) {
             </div>
             <div className="flex items-center gap-2">
               <span className={`px-2 py-1 rounded text-[10px] font-medium ${ffStores ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-                {ffStores ? 'ENBLED' : 'DISABLED'}
+                {ffStores ? 'ENABLED' : 'DISABLED'}
               </span>
             </div>
           </div>
+          <GateStatusCard protocolModes={cpModes} protocolResults={cpResults} cpLabels={cpLabels} />
         </div>
       </motion.div>
+
+      <div className="px-6 py-3 border-t border-slate-100 border-b border-slate-100">
+        <h2 className="text-[10px] font-medium text-slate-700 uppercase tracking-wider mb-2">Protocol Controls — Gate Status</h2>
+        <div className="grid grid-cols-3 gap-2">
+          {cpLabels.map((label, i) => (
+                <div key={i} className={`p-2 rounded text-[8px] font-medium transition-colors ${cpModes[i] === 'ENFORCE' ? 'bg-red-100 text-red-800' : cpModes[i] === 'WARN' ? 'bg-amber-100 text-amber-800' : 'bg-green-100 text-green-800'}`}>
+                  <span className="block text-slate-900">CP-STR-{String(i + 1).padStart(2, '0')}</span>
+                  <span className={`mt-1 text-${cpResults[i] === 'BLOCK' || cpResults[i] === 'EXCEPTION_REQUIRED' ? 'red' : cpResults[i] === 'WARN' ? 'amber' : 'green'}-700 font-medium`}>{cpResults[i]}</span>
+                  <span className="text-[8px] text-slate-500 ml-1">{cpModes[i]}</span>
+                </div>
+              ))}
+        </div>
+      </div>
 
       {/* KPI Row */}
       <motion.div
@@ -477,7 +479,9 @@ export function StoreDashboard({ persona, onFeedback }: StoreDashboardProps) {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-2">
             {quickActions.map((action, i) => {
               const isStoresAction = /^create-(grn|issue|return|transfer|adjustment)$/.test(action.code);
-              if (isStoresAction || action.code === 'request-exception') {
+              const isToolsAction = action.code === 'create-tool';
+              const showAction = ffStores ? (isStoresAction || isToolsAction || action.code === 'request-exception') : false;
+              if (showAction) {
                 return (
                   <button key={i} className={`flex-1 rounded-lg border px-3 py-2 text-[10px] font-medium transition-colors ${action.color === 'purple' ? 'bg-purple-50 text-purple-700 border-purple-200' : action.color === 'orange' ? 'bg-orange-50 text-orange-700 border-orange-200' : action.color === 'cyan' ? 'bg-cyan-50 text-cyan-700 border-cyan-200' : action.color === 'teal' ? 'bg-teal-50 text-teal-700 border-teal-200' : ''}`}>
                     <span className="w-3 h-3 rounded-md mr-2">{action.icon}</span>
