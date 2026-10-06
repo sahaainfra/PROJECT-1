@@ -45,6 +45,12 @@ export const featureFlags = [
   { key: 'ff.core.protocol', description: 'Protocol & Control engine', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 7' },
   { key: 'ff.core.audit', description: 'Central audit trail', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 3' },
   { key: 'ff.core.notify', description: 'Notification engine', scope: 'global', enabled: false, rolloutPercent: 0, owner: 'Part 3' },
+  { key: 'ff.tools', description: 'Tool & Small-Asset Tracking (Part 36)', scope: 'company', enabled: true, rolloutPercent: 100, owner: 'Part 36' },
+  { key: 'ff.tools.register', description: 'Tool register — GRN per-unit import & tag printing', scope: 'company', enabled: true, rolloutPercent: 100, owner: 'Part 36' },
+  { key: 'ff.tools.custody', description: 'Issue / return / transfer custody ledger', scope: 'project', enabled: true, rolloutPercent: 100, owner: 'Part 36' },
+  { key: 'ff.tools.scan', description: 'Mobile QR/barcode scan operations (offline queue)', scope: 'user', enabled: true, rolloutPercent: 50, owner: 'Part 36' },
+  { key: 'ff.tools.loss', description: 'Loss reporting, investigation & recovery postings', scope: 'project', enabled: true, rolloutPercent: 100, owner: 'Part 36' },
+  { key: 'ff.tools.calibration', description: 'Calibration-due monitoring & issue block', scope: 'site', enabled: true, rolloutPercent: 100, owner: 'Part 36' },
 ];
 
 export const protocolControls = [
